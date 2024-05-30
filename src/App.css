@@ -22,6 +22,7 @@ body{
   align-items: center;
   position: relative;
   justify-content: space-around;
+  overflow-y:scroll ;
 }
 .title{
   flex:.2;
@@ -43,8 +44,9 @@ body{
 }
 .inpbtn{
   width: 100%;
-  font-size: 1rem;
-  font-weight: bold;
+  min-height: 3rem;
+  font-size: 1.05rem;
+  font-weight: bolder;
   height: fit-content;
   padding: 10px;
   border-radius: 5px;
@@ -54,9 +56,13 @@ body{
   background-color: #6a11cb;
   border: 3px solid black;
 }
+.btn:hover{
+  transform: scale(1.01);
+  background-color: #6a11cb !important;
+}
 .inpbtn:hover,.inpbtn:focus,.inpbtn:target{
   outline: none;
-  background-color: #000000fd;
+  background-color: #6b11cbaf;
   color: white;
 }
 .formbox{
@@ -69,4 +75,37 @@ body{
   row-gap: 20px;
   width: 90%;
   height: 200px;
+}
+h4{
+  cursor: pointer;
+}
+h4:hover{
+  color: black;
+  transform: scale(1.01);
+}
+.custombox{
+  width:100%;
+  min-height:10rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 5px #6a11cb double;
+  border-bottom: 5px #6a11cb double;
+}
+.cros{
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  top:-12px;
+  right:0px;
+  border-radius: 50%;
+  color: #6a11cb;
+  background-color: whitesmoke;
+  font-size: 20px;
+  cursor: pointer;
+}
+.cros:hover{
+  color:red;
+  transform: scale(1.01);
 }

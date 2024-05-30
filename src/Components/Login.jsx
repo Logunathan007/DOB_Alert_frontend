@@ -5,8 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Login = (props) => {
   const navigate = useNavigate();
   const msgRef = useRef();  
-  const endpoint = 'http://127.0.0.1:5000' 
-
+  const endpoint = 'https://logunathan.pythonanywhere.com' 
   const verify = async(ref,name,password)=>{
     console.log("inside verify",ref,name,password)
     var msg = ""
